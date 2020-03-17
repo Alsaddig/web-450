@@ -1,0 +1,15 @@
+{
+  "empId":1007,
+  "firstname": "Alsaddig",
+  "lastname": "Ibrahim",
+  "todo":[
+    {
+      "text": "yes to do"
+    }
+  ],
+  "done": [
+    {
+      "text":"yes completed"
+    }
+  ]
+}
