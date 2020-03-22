@@ -9,7 +9,8 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./auth-layout.component.css']
 })
 export class AuthLayoutComponent implements OnInit {
-  //private _loginUrl = 'http://localhost:3001/api/employees/login/';
+
+  private _loginUrl = 'http://localhost:3000/api/employees/login/';
 
   constructor( private http: HttpClient, private cookie: CookieService ) { }
 
@@ -18,6 +19,6 @@ export class AuthLayoutComponent implements OnInit {
   onLogin(form: NgForm) {
     const value = form.value;
     console.log(value);
+  }
 
-      }
 }

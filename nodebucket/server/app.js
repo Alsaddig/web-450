@@ -28,7 +28,7 @@ mongoose.connect(connString, {promiseLibrary:require('bluebird'), useNewUrlParse
         .catch((err) => console.debug('MongoDB Error: ' + err.message));
  */
        // var mongoDB = 'mongodb+srv://alsaddig:Husam2010@api-gateway-ox66e.mongodb.net/test?retryWrites=true&w=majority';
-        var mongoDB = 'mongodb+srv://alsaddig:Husam2010@api-gateway-ox66e.mongodb.net/nodebucket?retryWrites=true&w=majority';
+        var mongoDB = 'mongodb+srv://admin:admin>@cluster0-lcbvb.mongodb.net/nodebucket?retryWrites=true&w=majority';
         mongoose.connect(mongoDB, {
           useUnifiedTopology: true, useNewUrlParser: true, promiseLibrary: require('bluebird')
         }).then(() => console.log('connection successful'))

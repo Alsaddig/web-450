@@ -1,0 +1,39 @@
+/* Chrome, Safari, Edge, Opera */
+.login.container {
+  margin-top: 15%;
+  width: 30%;
+  margin-left: 25%;
+  }
+
+  .login.title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: lighter;
+  }
+
+  .login-subtitle{
+    text-align: center;
+    color: yellow;
+  }
+
+  .error-message{
+    color: #DF546A
+  }
+.form{
+  width: 20%;
+}
+.login.container{
+  width: 500px;
+  background-color: green;
+}
+.column{
+  background-color: green;
+}
+.mat-elevation-z8{
+  background-color:green;
+  width: 40%;
+  color: white;
+}
+.at-headline{
+  color:yellow;
+}
