@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "server": "nodemon ./server/app.js",
+    "localhost": "ng build && node ./server/app.js",
+    "start": "node server/app.js",
+       "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

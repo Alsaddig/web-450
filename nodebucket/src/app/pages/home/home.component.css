@@ -1,13 +1,74 @@
+
 .main-welcome {
-  margin-top: 30px;
+  margin-top: 0;
+  height: 100%;
 }
 
-.title {
-  text-align: center;
-  font-weight: lighter;
+.task-title {
+  font-weight: 400;
 }
 
-.subtitle {
-  text-align: center;
+.tasks-container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  border: solid 1px #ccc;
+  min-height: 60px;
+  background: linear-gradient(
+    0deg,
+    rgba(245, 79, 73, .4) 0%,
+    rgba(245, 122, 73, .4) 50%,
+    rgba(250, 162, 75, .4) 100%
+  );
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  padding: 5%;
+}
+
+.task-card {
+  cursor: move;
+  min-height: 60px;
+  height: 68px;
   font-size: 14px;
+  border-bottom: solid 1px #ccc
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+  0 8px 10px 1px rgba(0, 0, 0, 0.14),
+  0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.example-box:last-child {
+  border: none;
+}
+
+.example-list.cdk-drop-list-dragging .task-card:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.image-container {
+  margin:auto;
+  width:300px;
+  height:90%;
+  position:relative;
+}
+
+.buddy {
+  width: 100%;
+  position:absolute;
+  bottom:0;
 }

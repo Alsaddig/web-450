@@ -1,3 +1,13 @@
+/*
+
+============================================
+; Title:  app.js
+; Author: Alsaddig Ibrahim
+; Date:   march 19 2020
+
+; Description: part of nodebucket
+;===========================================
+*/
 const express = require('express');
 const http = require('http');
 const morgan = require('morgan');
@@ -12,8 +22,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('dev'));
 
-app.use(express.static(path.join(__dirname, '../dist/nodebucket')));
-app.use('/', express.static(path.join(__dirname, '../dist/nodebucket')));
+app.use(express.static(path.join(__dirname, '../dist/nodebucket1')));
+app.use('/', express.static(path.join(__dirname, '../dist/nodebucket1')));
 
 // Global variables
 const port = process.env.PORT || 3000;

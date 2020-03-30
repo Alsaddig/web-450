@@ -1,17 +1,24 @@
+<!--
+   ============================================
+; Title:  base-layout.html
+; Author: Alsaddig Ibrahim
+; Date:   march 28 2020
+; Description: part of nodebucket
+;===========================================
+-->
+
 <div fxLayout="column">
 
-  <!-- navigation -->
-
-  <nav fxFlex>
+<nav fxFlex>
     <mat-toolbar>
       <!-- navbar container -->
       <div class="navbar-container">
         <!-- logo -->
-        <button class="logo" [routerLink]="['/home']" mat-button>nodebucket</button>
+         <button class="navbar-link" routerLink="/" mat-button>nodebucket</button>
 
-        <button class="navbar-link" routerLinkActive="active" [routerLink]="['/home']" mat-button>Home</button>
-        <button class="navbar-link" routerLinkActive="active" [routerLink]="['/about']" mat-button>About</button>
-        <button class="navbar-link" routerLinkActive="active" [routerLink]="['/login']" mat-button>Login</button>
+         <button class="navbar-link" routerLink="/" mat-button>Home</button>
+        <button class="navbar-link" routerLink="/about" mat-button>About</button>
+        <button class="navbar-link" routerLink="/login" mat-button>Login</button>
       </div>
 
     </mat-toolbar>
@@ -29,9 +36,7 @@
     <footer class="footer">
       <mat-toolbar class="footer-content">
         <p>
-        <button class="navbar-link" routerLinkActive="active" [routerLink]="['/home']" mat-button>Home</button>
-        <button class="navbar-link" routerLinkActive="active" [routerLink]="['/login']" mat-button>Login</button>
-         Alsaddig &copy; {{year | date: 'yyyy'}} - nodebucket - <a href="https://www.bellevue.edu/" class="bu-link" target="_blank">Bellevue University</a>
+          &copy; {{year | date: 'yyyy'}} - nodebucket - <a href="https://www.bellevue.edu/" class="bu-link" target="_blank">Bellevue University</a>
         </p>
       </mat-toolbar>
     </footer>

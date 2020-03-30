@@ -1,4 +1,16 @@
 /* Chrome, Safari, Edge, Opera */
+/*
+
+============================================
+; Title:  login.css
+; Author: Alsaddig Ibrahim
+; Date:   march 19 2020
+
+; Description: part of nodebucket
+;===========================================
+*/
+
+
 .login.container {
   margin-top: 15%;
   width: 30%;
@@ -37,3 +49,5 @@
 .at-headline{
   color:yellow;
 }
+
+

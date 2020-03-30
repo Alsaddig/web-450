@@ -1,0 +1,35 @@
+/*
+
+============================================
+; Title:  about.css
+; Author: Alsaddig Ibrahim
+; Date:   march 19 2020
+
+; Description: part of nodebucket
+;===========================================
+*/
+
+
+
+.main-welcome {
+  margin-top: 30px;
+}
+
+.title {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+}
+
+.about-content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.p-title {
+  font-size: 24px;
+}

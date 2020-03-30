@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder, Validators, NgForm } from '@angular/forms';
-import { CookieService } from 'ngx-cookie-service';
-import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-auth-layout',
@@ -9,15 +6,10 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./auth-layout.component.css']
 })
 export class AuthLayoutComponent implements OnInit {
-  //private _loginUrl = 'http://localhost:3001/api/employees/login/';
 
-  constructor( private http: HttpClient, private cookie: CookieService ) { }
+  constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
-  onLogin(form: NgForm) {
-    const value = form.value;
-    console.log(value);
-
-      }
 }

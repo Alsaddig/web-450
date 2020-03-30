@@ -1,23 +1,20 @@
-/* small {
-  color: red;
-}
-.result-msg {
-  text-align: center;
-  color: steelblue;
-  font-weight: bold;
-} */
-mat-card {
-  width: 20%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #F5F5F5;
-  padding: 5% 0;
-}
 
-mat-form-field {
-text-align: center;
-}
+.login.comtainer {
+  margin-top: 15%;
+  width: 50%;
+  margin-left: 25%;
+  }
+
+  .login.title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: lighter;
+  }
+
+  .login-subtitle{
+    text-align: center;
+  }
+
+  .error-message{
+    color: #DF546A
+  }

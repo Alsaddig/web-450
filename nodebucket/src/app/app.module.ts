@@ -18,36 +18,50 @@ import { CookieService } from 'ngx-cookie-service';
 import { LoginComponent } from './pages/login/login.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { AuthGuard } from './shared/guards/auth.guard';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatInputModule } from "@angular/material/input";
+import { AboutComponent } from "./pages/about/about.component";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatDialogModule } from '@angular/material/dialog';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { TaskCreateDialogComponent } from './shared/task-create-dialog/task-create-dialog.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    HomeComponent,
-    //DashboardComponent,
+    BaseLayoutComponent,
     AuthLayoutComponent,
-    BaseLayoutComponent
-
+    HomeComponent,
+    LoginComponent,
+    AboutComponent,
+    NotFoundComponent,
+    TaskCreateDialogComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(AppRoutes, { useHash: true, enableTracing: false }),
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatFormFieldModule,
-     MatIconModule,
-   //MatMenuModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(AppRoutes, { useHash: true, enableTracing: false, scrollPositionRestoration: 'enabled'}),
     FlexLayoutModule,
-    ReactiveFormsModule
-    //CarouselModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
+    MatInputModule,
+    MatDividerModule,
+    MatDialogModule,
+    MatMenuModule,
+    DragDropModule
   ],
-  providers: [
-    CookieService,
-  ],
+  providers: [ CookieService, AuthGuard],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
